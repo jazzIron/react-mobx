@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  user:
+    container_name: front-user
+    build:
+      context: ./client/users
+    volumes:
+        - ./client/users:/app
+    ports:
+      - "3001:3000"

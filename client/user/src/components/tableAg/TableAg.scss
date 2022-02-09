@@ -1,0 +1,16 @@
+@import "ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin";
+
+.ag-theme-alpine {
+    @include ag-theme-alpine((
+        alpine-active-color: rgb(121, 255, 116)
+    ));
+
+    .ag-header {
+        // background-color: red;
+    }
+
+    .ag-paging-panel{
+        justify-content: center;
+    }    
+}
